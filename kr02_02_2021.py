@@ -56,7 +56,14 @@ def task_5(lst1, lst2):
         Финальное значение должно быть помещено в переменную diff.
         """
 
-    return diff
+    lst1 = [1,2,3,4,5,6,7,8,9]
+    lst2 = [12,13,2,1,9,1,65,43]
+    s_f_l=set(lst1)
+    s_f_l_1=set(lst2)
+    con = s_f_l.difference(s_f_l_1)
+    a=list(con)
+    a.sort(reverse=False)
+    print(a)
 
 
 def task_6(lst):
@@ -65,6 +72,10 @@ def task_6(lst):
         Переменная lst - ваш список.
         Финальное значение должно быть помещено в переменную res.
         """
-
-    return res
+    lst=input().split()
+    m=set(lst)
+    res=list(m)
+    res.sort(reverse=True)
+    res=tuple(res)
+    print(res)
 
